@@ -17,7 +17,7 @@ namespace YourNamespace.Controllers
         private static readonly HttpClient client = new HttpClient();
         private readonly string client_id = "e3d3dc11e6de46e3bf8e69503bb38f66";
         private readonly string client_secret = "a3ee70ec0bc04502a6f72d3d0e18bfe5";
-        private readonly string redirect_uri = "https://localhost:7099/Auth/callback";
+        private readonly string redirect_uri = "https://spokiapi-a56dd7f182c0.herokuapp.com/Auth/callback";
 
         [HttpGet("callback")]
         public async Task<IActionResult> SpotifyCallback([FromQuery] string code, [FromQuery] string state)
