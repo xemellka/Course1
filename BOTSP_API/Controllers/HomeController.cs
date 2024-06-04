@@ -8,8 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace YourNamespace.Controllers
-{
+
     [ApiController]
     [Route("[controller]")]
     public class SpotifyAuthController : ControllerBase
@@ -339,4 +338,4 @@ public class PlaylistDetails
 
     }
 
-}
+
