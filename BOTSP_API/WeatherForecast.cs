@@ -4,10 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using YourNamespace.Controllers;
 
-namespace YourNamespace
-{
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -43,7 +41,6 @@ namespace YourNamespace
             });
         }
     }
-}
 public class SpotifyToken
 {
     public string AccessToken { get; set; }
