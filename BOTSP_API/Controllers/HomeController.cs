@@ -14,9 +14,9 @@ using System.Web;
     public class SpotifyAuthController : ControllerBase
     {
         private static readonly HttpClient client = new HttpClient();
-        private readonly string client_id = "e3d3dc11e6de46e3bf8e69503bb38f66";
-        private readonly string client_secret = "a3ee70ec0bc04502a6f72d3d0e18bfe5";
-        private readonly string redirect_uri = "https://spokiapi-a6c792bd77b1.herokuapp.com/Auth/callback";
+        private readonly string client_id = "";
+        private readonly string client_secret = "";
+        private readonly string redirect_uri = "";
 
         [HttpGet("callback")]
         public async Task<IActionResult> SpotifyCallback([FromQuery] string code, [FromQuery] string state)
